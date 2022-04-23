@@ -8,9 +8,21 @@
 </head>
 <body>
     <div name="input">
-        <div name="left-operand"></div>
-        <div name="operation"></div>
-        <div name="left-operand"></div>
+        <div name="left-operand">
+            <p>Left operand</p>
+            <input id="left-operand" type="number" name="left-operand">
+        </div>
+        <div name="operator">
+            <input id="+" type="radio" name="+" value="+">
+            <label for="+">+ Addition</label><br>
+
+            <input id="-" type="radio" name="-" value="-">
+            <label for="-">- Subtraction</label><br>
+        </div>
+        <div name="right-operand">
+            <p>Right operand</p>
+            <input id="right-operand" type="number" name="right-operand">
+        </div>
     </div>
     <div name="action">
         <button type="button" onclick="calculate()">Calculate</button>
